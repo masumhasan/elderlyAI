@@ -8,9 +8,7 @@ from livekit.plugins import (
 )
 from livekit.plugins import google
 from prompts import AGENT_INSTRUCTION, SESSION_INSTRUCTION
-from tools import get_weather, search_web, send_email, read_emails, search_emails, set_reminder, calculate_medication_schedule, check_health_symptoms, help_with_technology, get_news_summary, convert_units, emergency_contacts_info, find_local_services, get_current_date_time, get_agent_capabilities, spark_imagination, search_google, search_google_news, visit_website, read_article, write_code_with_gemini, explain_code_with_gemini, debug_code_with_gemini, learn_programming_with_gemini
-
-
+from tools import get_weather, recognize_song,get_agent_capabilities, search_web, send_email, read_emails, search_emails, set_reminder, calculate_medication_schedule, check_health_symptoms, help_with_technology, get_news_summary, convert_units, emergency_contacts_info, find_local_services, get_current_date_time, spark_imagination, search_google, search_google_news, visit_website, read_article, write_code_with_gemini, explain_code_with_gemini, debug_code_with_gemini, learn_programming_with_gemini
 
 
 class Assistant(Agent):
@@ -38,15 +36,16 @@ class Assistant(Agent):
                 emergency_contacts_info,
                 find_local_services,
                 get_current_date_time,
-                get_agent_capabilities,
                 spark_imagination,
                 visit_website,
                 read_article,
                 write_code_with_gemini,
                 explain_code_with_gemini,
                 debug_code_with_gemini,
-                learn_programming_with_gemini
-            ],
+                learn_programming_with_gemini,
+                recognize_song,
+                get_agent_capabilities
+            ]
         )
 
 
